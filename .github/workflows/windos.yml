@@ -1,6 +1,6 @@
 
 
-name: CI
+name: WIN
 
 
 on: [push, workflow_dispatch]
@@ -40,7 +40,7 @@ jobs:
 
     - run: Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' -name "UserAuthentication" -Value 1
 
-    - run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "P@ssw0rd!" -Force)
+    - run: Set-LocalUser -Name "sajid" -Password (ConvertTo-SecureString -AsPlainText "sajid@@009" -Force)
 
     - name: Create Tunnel
 
